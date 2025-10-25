@@ -13,7 +13,7 @@ import { checkboxVariants } from "../../components/ui/checkbox";
 import { kcSanitize } from "keycloakify/lib/kcSanitize";
 import TrackSwiftlyLogo from "../../components/ui/TrackSwiftlyLogo";
 import logoGeometer from "../../assets/img/logo_geomter_500x500.png"
-import mapBackgroundImage from "../../assets/img/digital-map-with-road-network-highlights-routes-with-line-se/26aa712b-979e-4494-b7a0-457468712aca.jpg";
+import mapBackgroundImage from "../../assets/img/nature-blue.jpg";
 import { LoadingSpinner } from "../../components/ui/LoadingSpinner";
 import { useImageLoader } from "../../hooks/useImageLoader";
 import TrackswifltyShortLogoSvg from "../../components/ui/TrackswifltyShortLogoSvg";
@@ -169,25 +169,14 @@ export default function Register(props: RegisterProps) {
     return (
         <div className="min-h-screen flex">
             {/* Left Column - Hero Image Section */}
-            <div 
-                className="hidden lg:flex lg:w-1/2 relative bg-cover bg-center bg-no-repeat"
-                style={{
-                    backgroundImage: `url(${mapBackgroundImage})`
-                }}
-            >
-                {/* Gradient overlay for better contrast */}
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-600/20 via-purple-600/10 to-gray-900/30"></div>
-                
-                {/* Logo positioned at bottom left */}
-                <div className="absolute bottom-8 left-8 z-10">
-                    <TrackSwiftlyLogo />
-                </div>
-
-                {/* Decorative element */}
-                <div className="absolute top-8 right-8 z-10">
-                    <div className="bg-white/10 backdrop-blur-sm rounded-lg p-3">
-                        <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
-                    </div>
+            <div className="hidden lg:flex lg:w-1/2 p-1"> {/* Added padding wrapper */}
+                <div 
+                    className="w-full relative bg-cover bg-center bg-no-repeat rounded-lg"
+                    style={{
+                        backgroundImage: `url(${mapBackgroundImage})`
+                    }}
+                >
+                    
                 </div>
             </div>
             
