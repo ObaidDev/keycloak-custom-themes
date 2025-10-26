@@ -13,7 +13,7 @@ import { checkboxVariants } from "../../components/ui/checkbox";
 import { kcSanitize } from "keycloakify/lib/kcSanitize";
 import TrackSwiftlyLogo from "../../components/ui/TrackSwiftlyLogo";
 import logoGeometer from "../../assets/img/logo_geomter_500x500.png"
-import mapBackgroundImage from "../../assets/img/nature-blue.jpg";
+import mapBackgroundImage from "../../assets/img/earth.jpg";
 import { LoadingSpinner } from "../../components/ui/LoadingSpinner";
 import { useImageLoader } from "../../hooks/useImageLoader";
 import TrackswifltyShortLogoSvg from "../../components/ui/TrackswifltyShortLogoSvg";
@@ -169,9 +169,9 @@ export default function Register(props: RegisterProps) {
     return (
         <div className="min-h-screen flex">
             {/* Left Column - Hero Image Section */}
-            <div className="hidden lg:flex lg:w-1/2 p-1"> {/* Added padding wrapper */}
+            <div className="hidden lg:flex lg:w-1/2"> {/* Added padding wrapper */}
                 <div 
-                    className="w-full relative bg-cover bg-center bg-no-repeat rounded-lg"
+                    className="w-full relative bg-cover bg-center bg-no-repeat"
                     style={{
                         backgroundImage: `url(${mapBackgroundImage})`
                     }}
